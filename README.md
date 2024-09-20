@@ -9,7 +9,7 @@ Ce projet a pour objectif de classifier automatiquement différents types de pro
 Les descriptions des produits fournissent des informations clés qui sont utilisées pour la classification. La **Fréquence des mots** dans ces descriptions est une étape importante pour identifier les termes les plus communs et comprendre la structure textuelle des données.
 
 #### Illustration : Fréquence des Mots
-![Fréquence des Mots](OC-DataScience-P6-Classifiez_automatiquement_biens_consommation/Illustrations_diapos/Diapo_10.png)
+![Fréquence des Mots](Illustrations_diapos/Diapo_10.png)
 
 - Le graphique montre les **20 mots les plus fréquents** dans les descriptions et les noms de produits.
 - Des nuages de mots sont également générés pour différentes catégories de produits (fournitures, bébé, montre, décoration, cuisine, beauté, informatique).
@@ -18,7 +18,7 @@ Les descriptions des produits fournissent des informations clés qui sont utilis
 En complément des descriptions textuelles, des images des produits sont analysées. Les caractéristiques visuelles sont extraites à l'aide des algorithmes **SIFT** et **ORB** pour détecter les points clés.
 
 #### Illustration : SIFT et ORB Visual Words
-![SIFT et ORB Visual Words](OC-DataScience-P6-Classifiez_automatiquement_biens_consommation/Illustrations_diapos/Diapo_27.png)
+![SIFT et ORB Visual Words](Illustrations_diapos/Diapo_27.png)
 
 - Les points clés des images sont détectés grâce aux algorithmes **SIFT** et **ORB**.
 - Les histogrammes permettent de visualiser la fréquence des mots visuels dans les images de produits comme les montres.
@@ -29,7 +29,7 @@ En complément des descriptions textuelles, des images des produits sont analys�
 Pour la phase d'apprentissage non supervisé, nous avons utilisé une combinaison des données textuelles et d'images pour effectuer un clustering des produits. Les modèles **USE 5** (pour les textes) et **Inception V3** (pour les images) ont été utilisés. 
 
 #### Illustration : Combinaison de USE 5 et Inception V3
-![Combinaison USE 5 et Inception V3](OC-DataScience-P6-Classifiez_automatiquement_biens_consommation/Illustrations_diapos/Diapo_33.png)
+![Combinaison USE 5 et Inception V3](Illustrations_diapos/Diapo_33.png)
 
 - Le clustering montre une séparation des différentes catégories de produits sur la base des descriptions textuelles et des images.
 - Les performances sont mesurées par des indicateurs tels que l'indice de Rand ajusté (ARI) et la précision.
@@ -38,7 +38,7 @@ Pour la phase d'apprentissage non supervisé, nous avons utilisé une combinaiso
 Une fois le modèle initial validé, l'étape suivante a consisté à entraîner un modèle supervisé sur les mêmes données. Les performances du modèle sont évaluées avec des métriques de précision à la fois sur l'ensemble d'entraînement et l'ensemble de test.
 
 #### Illustration : Résultats de la Méthodologie
-![Conclusion et Résultats](OC-DataScience-P6-Classifiez_automatiquement_biens_consommation/Illustrations_diapos/Diapo_35.png)
+![Conclusion et Résultats](Illustrations_diapos/Diapo_35.png)
 
 - L'approche supervisée a atteint une précision de **99,9%** sur l'ensemble d'entraînement et de **91%** sur l'ensemble de test.
 - Le tableau récapitulatif montre les performances des modèles pour l'apprentissage non supervisé et supervisé.
