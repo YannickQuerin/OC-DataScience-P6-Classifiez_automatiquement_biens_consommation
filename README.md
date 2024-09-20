@@ -2,6 +2,8 @@
 
 Ce projet vise à classifier automatiquement des biens de consommation à partir de données textuelles et d'images, afin d'améliorer la précision des recommandations de produits sur une plateforme de place de marché.
 
+![Classification automatique des biens de consommation](image_illustration_projet.png)
+
 ## Table des Matières
 
 1. [Contexte et Données](#contexte-et-données)
@@ -21,6 +23,8 @@ L'objectif de ce projet est de développer un moteur de recommandation automatiq
 - Améliorer la précision des recommandations de produits.
 - Garantir une attribution correcte des catégories aux articles.
 - Faciliter l'automatisation de la classification pour l'entreprise.
+
+![Données Flipkart](image_contexte_données.png)
 
 ### Jeu de Données
 
@@ -44,6 +48,8 @@ Le traitement des données textuelles repose sur des techniques de **NLP (Natura
 3. **Lemmatisation**
 4. **Racinisation**
 
+![Processus de traitement NLP](image_processus_nlp.png)
+
 ### Extraction de Features
 - **Bag of Words**
 - **Word Embeddings** (Word2Vec, BERT, Sentence-Transformers, etc.)
@@ -54,6 +60,8 @@ Le traitement des données textuelles repose sur des techniques de **NLP (Natura
 
 ### Classification Non Supervisée (KMeans)
 - Évaluation avec des métriques telles que **ARI (Adjusted Rand Index)** et **Accuracy** pour mesurer les performances.
+
+![Classification KMeans sur données textuelles](image_classification_kmeans_text.png)
 
 ### Classification Supervisée
 - Evaluation de la précision sur les ensembles d'entraînement et de test.
@@ -69,11 +77,15 @@ Le traitement des données images s'appuie sur les techniques de vision par ordi
 2. **Conversion en niveaux de gris.**
 3. **Correction de l'exposition et du contraste.**
 
+![Préprocessing des images](image_preprocess_images.png)
+
 ### Extraction de Features
 - Utilisation de techniques comme **SIFT**, **ORB** et des réseaux de neurones convolutifs **CNN** (ex. : **VGG16**, **VGG19**, **InceptionV3**).
 
 ### Classification Non Supervisée (KMeans)
 - Analyse et interprétation des clusters avec des techniques de réduction de dimensionnalité (ACP + TSNE).
+
+![Classification KMeans sur données images](image_classification_kmeans_images.png)
 
 ### Classification Supervisée
 - Utilisation de l'apprentissage supervisé pour améliorer les performances des modèles, avec une évaluation de la précision sur l'entraînement et les tests.
@@ -89,11 +101,15 @@ L'approche combine des embeddings textuels et les features extraites des images 
   - ARI combiné : 0.65
   - Accuracy combinée : 0.85
 
+![Combinaison Textes et Images](image_combinaison_text_image.png)
+
 ---
 
 ## Conclusion
 
 L'étude a démontré la faisabilité d'une approche combinant traitement de texte et traitement d'images pour classifier automatiquement des biens de consommation.
+
+![Performances des modèles](image_performance_modeles.png)
 
 - **Meilleures Performances :**
   - **Modèle Textuel (USE 5)** : ARI = 0.70, Accuracy = 0.85.
